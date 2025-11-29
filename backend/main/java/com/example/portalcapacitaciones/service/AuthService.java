@@ -23,4 +23,8 @@ public class AuthService {
 
         return usuario;
     }
+    public Usuario registrar(Usuario u) {
+        return repo.save(u);
+    }
+
 }

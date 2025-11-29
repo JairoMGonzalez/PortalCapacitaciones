@@ -19,4 +19,9 @@ public class AuthController {
     public Usuario login(@RequestBody Usuario datos) {
         return service.login(datos.getCorreo(), datos.getPassword());
     }
+    @PostMapping("/registro")
+    public Usuario registro(@RequestBody Usuario usuario) {
+        return service.registrar(usuario);
+    }
+
 }
