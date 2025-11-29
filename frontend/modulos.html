@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal Web - Módulos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/api.js"></script>
+
+    <style>
+        /* 🔥 Estilo bonito para el botón de salir */
+        .btn-salir {
+            background: #e63946;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .btn-salir:hover {
+            background: #b71c1c;
+            transform: scale(1.06);
+        }
+
+        /* Para ubicar el botón en el navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo-area">
+        <span class="logo-text">Portal Web</span>
+    </div>
+
+    <!-- 🔥 BOTÓN DE SALIR -->
+    <button class="btn-salir" onclick="window.location.href='index.html'">
+        Salir
+    </button>
+</header>
+
+<h1 style="text-align:center; margin-top:30px;">Módulos de Capacitación</h1>
+
+<div class="modulo-container">
+
+    <div class="modulo-card" onclick="goModulo('fullstack')">
+        🖥 <h2>Fullstack</h2>
+    </div>
+
+    <div class="modulo-card" onclick="goModulo('apis')">
+        🔗 <h2>APIs e Integraciones</h2>
+    </div>
+
+    <div class="modulo-card" onclick="goModulo('cloud')">
+        ☁ <h2>Cloud</h2>
+    </div>
+
+    <div class="modulo-card" onclick="goModulo('data')">
+        📊 <h2>Data Engineer</h2>
+    </div>
+
+</div>
+
+<script>
+    function goModulo(mod) {
+        window.location.href = "cursos.html?modulo=" + mod;
+    }
+</script>
+
+</body>
+</html>

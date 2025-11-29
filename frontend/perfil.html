@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/api.js"></script>
+    <script src="js/perfil.js"></script>
+</head>
+
+<body onload="cargarPerfil()">
+
+<!-- NAVBAR MODERNO -->
+<header class="navbar">
+    <div class="logo-area">
+        <img src="assets/index.jpg" class="logo">
+        <span class="logo-text">Portal Web</span>
+    </div>
+
+    <div class="nav-buttons">
+        <button class="btn-nav" onclick="window.location.href='modulos.html'">Módulos</button>
+        <button class="btn-nav" onclick="window.location.href='cursos.html'">Cursos</button>
+        <button class="btn-nav" onclick="window.location.href='admin.html'">Admin</button>
+    </div>
+</header>
+
+<!-- PERFIL -->
+<section class="perfil-container">
+
+    <!-- INFORMACIÓN GENERAL -->
+    <div class="perfil-info card">
+        <img src="assets/default.png" class="perfil-avatar">
+
+        <h2 id="perfil-nombre" class="perfil-nombre">Usuario</h2>
+        <p id="perfil-correo" class="perfil-correo">correo@test.com</p>
+    </div>
+
+    <!-- INSIGNIAS -->
+    <div class="perfil-section card">
+        <h3 class="section-title">Insignias Obtenidas</h3>
+        <div id="lista-insignias" class="insignias-grid">
+            <!-- Insignias cargadas por JS -->
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>

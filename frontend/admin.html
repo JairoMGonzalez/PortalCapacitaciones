@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Administración de Cursos</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/api.js"></script>
+    <script src="js/admin.js"></script>
+</head>
+
+<body onload="cargarCursos()">
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">
+        <span class="nav-title">Portal Web</span>
+    </div>
+
+    <div class="nav-links">
+        <button class="btn-nav" onclick="window.location.href='modulos.html'">Módulos</button>
+        <a href="cursos.html" class="nav-btn">Cursos</a>
+        <a href="perfil.html" class="nav-btn">Perfil</a>
+    </div>
+</div>
+
+<!-- TITULO -->
+<h1 class="admin-title">Administración de Cursos</h1>
+
+<div class="admin-container">
+
+    <!-- FORMULARIO CREAR / EDITAR -->
+    <section class="admin-form-box">
+
+        <h2>Crear Curso</h2>
+
+        <div class="form-grid">
+            <input id="nombre" class="form-input" placeholder="Nombre del curso">
+            <input id="descripcion" class="form-input" placeholder="Descripción">
+            <input id="modulo" class="form-input" placeholder="Módulo (cloud, apis, fullstack, data)">
+        </div>
+
+        <div class="form-buttons">
+            <button id="btn-guardar" class="btn-guardar" onclick="crearCurso()">Guardar</button>
+            <button class="btn-cancelar" onclick="limpiarFormulario()">Cancelar</button>
+        </div>
+
+        <p id="msg" class="admin-msg"></p>
+
+        <!-- 🔥 Mensaje de éxito -->
+        <div id="mensaje-curso" class="mensaje-curso" style="
+            margin-top: 12px;
+            padding: 10px;
+            background: #d4edda;
+            color: #155724;
+            border-radius: 6px;
+            display: none;
+        ">
+            <!-- Aquí se insertará el texto dinámicamente -->
+        </div>
+
+    </section>
+
+    <!-- LISTA DE CURSOS -->
+    <section class="admin-list-box">
+        <h2>Lista de Cursos</h2>
+
+        <table class="admin-table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Curso</th>
+                <th>Módulo</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tbody id="tabla-cursos"></tbody>
+        </table>
+    </section>
+
+</div>
+
+</body>
+</html>

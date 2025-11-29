@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal Web - Login</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR SUPERIOR -->
+<header class="navbar">
+    <div class="logo-area">
+        <img src="assets/index.jpg" class="logo">
+        <span class="logo-text">Bienvenidos</span>
+    </div>
+
+
+</header>
+
+<!-- CONTENIDO PRINCIPAL -->
+<section class="hero">
+
+    <div class="hero-left">
+        <h1>"El aprendizaje es el único tesoro que no puede ser robado"</h1>
+
+
+
+        <!-- FORMULARIO LOGIN -->
+        <div class="login-box">
+            <h2>Iniciar Sesión</h2>
+
+            <input type="text" id="correo" placeholder="Correo">
+            <input type="password" id="password" placeholder="Contraseña">
+
+            <button onclick="login()" class="btn-login">Entrar</button>
+
+            <p id="error" class="error-text"></p>
+            <button class="btn-cta">Contáctanos</button>
+        </div>
+    </div>
+
+    <div class="hero-right">
+        <img src="assets/index.jpg" class="hero-image">
+    </div>
+
+
+</section>
+
+</body>
+</html>

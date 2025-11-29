@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/api.js"></script>
+    <script src="js/curso.js"></script>
+</head>
+
+<body onload="cargarCurso()">
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="nav-left">
+
+        <span class="nav-title">Portal Web</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="cursos.html" class="nav-btn">Cursos</a>
+        <a href="perfil.html" class="nav-btn">Perfil</a>
+
+    </div>
+</div>
+
+<!-- CONTENIDO DEL CURSO -->
+<div class="curso-detalle-container">
+
+    <!-- Imagen -->
+    <img id="curso-imagen" class="curso-detalle-img">
+
+    <!-- Contenido -->
+    <div class="curso-detalle-content">
+        <h1 id="curso-nombre"></h1>
+        <p id="curso-descripcion"></p>
+
+        <span id="curso-modulo" class="curso-detalle-badge"></span>
+
+        <div class="curso-detalle-buttons">
+            <button class="btn-login" onclick="marcar('iniciado')">Marcar Iniciado</button>
+            <button class="btn-completado" onclick="marcar('completado')">Marcar Completado</button>
+        </div>
+
+        <p id="curso-msg" class="success-text"></p>
+    </div>
+
+</div>
+
+</body>
+</html>

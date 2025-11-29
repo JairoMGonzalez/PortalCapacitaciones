@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Cursos</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/api.js"></script>
+    <script src="js/cursos.js" defer></script>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo-area">
+        <img src="assets/index.jpg" class="logo">
+        <span class="logo-text">Portal Web</span>
+    </div>
+
+    <div class="nav-buttons">
+        <button class="btn-nav" onclick="location.href='modulos.html'">Módulos</button>
+        <button class="btn-nav" onclick="location.href='perfil.html'">Perfil</button>
+    </div>
+</header>
+
+<section class="cursos-section">
+
+    <h1 class="titulo-cursos">Listado de Cursos</h1>
+    <p class="subtitulo-cursos">Explora nuestros cursos para potenciar tus habilidades.</p>
+
+    <div id="listaCursos" class="grid-cursos"></div>
+
+</section>
+
+</body>
+</html>
