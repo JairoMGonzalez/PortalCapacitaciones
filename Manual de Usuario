@@ -1,0 +1,56 @@
+Portal de Capacitaciones
+Documentación de Instalación y Uso
+Autor
+Jairo Martinez
+1. Requisitos Previos
+- Java JDK 17 o superior instalado
+- PostgreSQL instalado y en ejecución
+- Navegador web actualizado
+- Puerto 8085 disponible para el backend
+- Editor de código recomendado: IntelliJ IDEA, VS Code
+2. Instalación del Backend (Spring Boot)
+1. Abrir el proyecto backend en IntelliJ IDEA.
+2. Configurar `application.properties` con los datos de la base de datos:
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/portal
+spring.datasource.username=postgres
+spring.datasource.password=TU_CLAVE
+spring.jpa.hibernate.ddl-auto=update3.
+4. Ejecutar la aplicación con el botón.
+5. El backend quedará disponible en: http://localhost:8085
+3. Instalación del Frontend
+1. Abrir la carpeta del frontend.
+2. No requiere instalación adicional (HTML, CSS y JS puros).
+3. Abrir el archivo `index.html` en el navegador o servir la carpeta con una herramienta local.
+
+4. Uso del Sistema
+4.1 Inicio de Sesión
+1. Abrir.
+2. Ingresar correo y contraseña registrados.
+3. Si las credenciales son correctas, será redirigido a la pantalla de módulos.
+4.2 Navegación por Módulos
+El usuario podrá seleccionar entre:
+- Fullstack
+- APIs
+- Cloud
+- Data
+Al seleccionar uno, el sistema muestra los cursos disponibles.
+4.3 Gestión de Cursos (Admin)
+1. Ingresar al módulo Admin.
+2. Crear cursos ingresando nombre, descripción y módulo.
+3. Los cursos pueden editarse y eliminarse.
+4. Al crear un curso, aparece un mensaje confirmando la acción.
+4.4 Perfil del Usuario
+En esta sección se puede visualizar:
+- Nombre
+- Correo
+- Insignias obtenidas
+
+5. Solución de Problemas
+- Si no carga la lista de cursos: confirme que el backend está levantado.
+- Si no inicia sesión: verifique credenciales y base de datos.
+- Si no elimina un curso: borre dependencias de insignias o progreso.
+- Si el frontend no responde: recargar la página o limpiar caché.
+6. Créditos
+Sistema desarrollado por Jairo Martinez.
+
